@@ -13,17 +13,34 @@
       * {
         font-family: 'Pretendard', serif;
       }
+      @keyframes AnimationName {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
       body {
-        background: linear-gradient(180deg, #422b83 0%, #4a629f 100%);
+        /* background-color:#2030e5 ; */
+        background: linear-gradient(-45deg, #0bcbdd, #159cda, #123a8c, #b333e3);
+        background-size: 300% 300%;
+        animation: AnimationName 6s infinite;
         height: 100vh;
       }
+
       .profile {
         width: 100px;
         height: 100px;
         border-radius: 100%;
+        border: 2px solid #ffde4b;
         background-image: url('Linktree_Profile.png');
-        background-position: center;
+        background-position: 3px 5px;
         background-size: cover;
+        background-color: #ffde4b;
       }
       .main {
         color: #ffffff;
@@ -69,8 +86,11 @@
   <body>
     <div class="wrap">
       <div class="profile"></div>
-      <h1 class="main">홍길동</h1>
-      <p class="sub">안녕하세요 바다를 사랑하는 홍길동입니다.</p>
+      <h1 class="main">100D</h1>
+      <p class="sub">
+        <span>Update 10.31</span>
+        <b>2022 한경 디지털 ABCD 포럼</b>
+      </p>
       <a style="background-color: #f3edff" target="_blank" href="https://spartacodingclub.kr/">버튼명</a>
       <a target="_blank" href="https://spartacodingclub.kr/community/blog">블로그</a>
       <a style="background-color: #f3edff" target="_blank" href="https://spartacodingclub.kr/">페이스북</a>
